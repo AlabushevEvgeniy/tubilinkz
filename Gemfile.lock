@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/thoughtbot/shoulda-matchers.git
-  revision: ead87017a6c15adce66a87dce8ee2ece91d0d27c
+  revision: 4b160bd19ecca7f97d7ac22dccd5fde9b0da5a9f
   branch: rails-5
   specs:
     shoulda-matchers (3.1.2)
@@ -263,7 +263,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
-    unicode-display_width (1.2.1)
+    unicode-display_width (1.5.0)
     warden (1.2.7)
       rack (>= 1.0)
     web-console (3.5.1)
@@ -309,4 +309,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.14.6
+   1.17.3
