@@ -92,12 +92,12 @@ class LinksController < ApplicationController
   # Loads Link model according to domain and param[:short_url] option, see routes.rb
   def set_shortlink
     name = params[:short_url]
-    # domain = // TBD: only tubi.ru domain for now
+    # domain = // TBD: only gudprogtest.ru domain for now
     @link = Link.where(name: name, domain: nil).take
   end
 
   # set Link domain name (for custom domains feature)
-  # empty string by default -- meaning current app tubi.ru domain
+  # empty string by default -- meaning current app gudprogtest.ru domain
   def set_linkdomain
     @domain = nil
   end
