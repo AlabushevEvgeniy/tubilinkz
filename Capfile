@@ -34,11 +34,22 @@ require 'capistrano/rbenv'
 require 'capistrano/rails'
 require 'capistrano/passenger'
 
+task :use_rvm do
+  require 'capistrano/rvm'
+end
+
+task :use_rbenv do
+  require 'capistrano/rbenv'
+end
+
+task production: :use_rbenv
+task staging: :use_rvm
+
 # Параметры, нужные для работы плагина https://github.com/capistrano/rbenv
 # Тип установки rbenv на удаленной машине
 # и версия руби для запуска приложения на сервере
 set :rbenv_type, :user
-set :rbenv_ruby, '2.4.1'
+set :rbenv_ruby, '2.5.3'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }

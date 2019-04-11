@@ -9,15 +9,6 @@
 
 
 
-# Выбираем сервер и пользователя, под которым Cap туда будет логиниться
-# Назначаем этому серверу три основные дефолтные роли:
-# - application server (где живет наш passenger+rails)
-# - web server (где живет nginx)
-# - database (где живет наш Postgres)
-# У нас все живет на одной машине.
-server 'gudprogtest.ru', user: 'deploy', roles: %w{app db web}
-
-
 # role-based syntax
 # ==================
 
