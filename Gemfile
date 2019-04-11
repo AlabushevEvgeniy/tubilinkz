@@ -5,16 +5,17 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.5.3'
 gem 'rails', '~> 5.1.1'
 gem 'puma', '~> 3.7'
 
 gem 'devise', '~> 4.3.0'
 
 gem 'jquery-rails'
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap' #, '~> 4.0.0.alpha6'
 gem 'font-awesome-rails'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
+gem 'sass-rails' #, '~> 5.0'
+gem 'uglifier' #, '>= 1.3.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
