@@ -33,6 +33,7 @@ require 'capistrano/bundler'
 require 'capistrano/rbenv'
 require 'capistrano/rails'
 require 'capistrano/passenger'
+require 'capistrano-resque'
 
 task :use_rvm do
   require 'capistrano/rvm'
